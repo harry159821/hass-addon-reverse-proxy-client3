@@ -8,8 +8,6 @@ function install() {
 
     mkdir -p $app_path
     curl -o /tmp/${file_name} http://192.168.31.22:8000/npc
-
-    ls -la /tmp/${file_dir}
     cp -f /tmp/${file_name} ${app_path}/
     ls -la $app_path
 }
