@@ -1,7 +1,7 @@
 #!/usr/bin/env bashio
 WAIT_PIDS=()
-CONFIG_PATH='/share/npc.conf'
-DEFAULT_CONFIG_PATH='/npc.conf'
+# CONFIG_PATH='/share/npc.conf'
+# DEFAULT_CONFIG_PATH='/npc.conf'
 
 function stop_npc() {
     bashio::log.info "Shutdown npc client"
