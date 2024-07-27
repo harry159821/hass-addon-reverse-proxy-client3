@@ -1,7 +1,7 @@
-name: "FRP Client"
+name: "NPC Client"
 description: "You can use this tool to achieve remote access to local Home Assistant OS by port forwarding"
 version: "1.0.1"
-slug: "frp_client"
+slug: "npc_client"
 host_network: true
 startup: application
 boot: "auto"
@@ -14,25 +14,3 @@ devices:
   - /dev/net/tun
 arch:
   - aarch64
-  - amd64
-  - armhf
-  - armv7
-  - i386
-options:
-  serverAddr: "example.com"
-  serverPort: 7000
-  authToken: "123456789"
-  webServerPort: 7500
-  webServerUser: "admin"
-  webServerPassword: "123456789"
-  customDomain: "example.com"
-  proxyName: "homeassistant"
-schema:
-  serverAddr: str
-  serverPort: int
-  authToken: str
-  webServerPort: int
-  webServerUser: str
-  webServerPassword: str
-  customDomain: str
-  proxyName: str
