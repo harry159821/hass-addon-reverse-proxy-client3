@@ -10,7 +10,7 @@ function stop_npc() {
 
 bashio::log.info "Starting frp client"
 
-cat $CONFIG_PATH
+# cat $CONFIG_PATH
 
 cd /usr/src
 ./npc -server=119.3.68.58:8024 -vkey=y3m1i57pftcmul1j -type=tcp & WAIT_PIDS+=($!)
